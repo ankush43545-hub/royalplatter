@@ -1,0 +1,126 @@
+/* ====================================
+   ROYAL PLATTER – Animations
+   ==================================== */
+
+/* Preloader */
+@keyframes crownPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.15); opacity: 0.7; }
+}
+
+@keyframes loadFill {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+/* Marquee */
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Scroll Indicator */
+@keyframes scrollPulse {
+  0%, 100% { opacity: 1; transform: scaleY(1); }
+  50% { opacity: 0.3; transform: scaleY(0.5); }
+}
+
+/* Gold shimmer on hover */
+@keyframes goldShimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+/* Fade in up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Float */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Hero content stagger */
+.hero-tagline { animation: fadeInUp 0.8s ease 0.3s both; }
+.hero-title .title-line:nth-child(1) { animation: fadeInUp 0.8s ease 0.5s both; }
+.hero-title .title-line:nth-child(2) { animation: fadeInUp 0.8s ease 0.65s both; }
+.hero-title .title-line:nth-child(3) { animation: fadeInUp 0.8s ease 0.8s both; }
+.hero-subtitle { animation: fadeInUp 0.8s ease 0.95s both; }
+.hero-buttons { animation: fadeInUp 0.8s ease 1.1s both; }
+.hero-scroll-indicator { animation: fadeIn 1s ease 1.4s both; }
+.hero-stats { animation: fadeInUp 0.8s ease 1.2s both; }
+
+/* Menu card stagger */
+.menu-card:nth-child(1) { animation-delay: 0.05s; }
+.menu-card:nth-child(2) { animation-delay: 0.1s; }
+.menu-card:nth-child(3) { animation-delay: 0.15s; }
+.menu-card:nth-child(4) { animation-delay: 0.2s; }
+.menu-card:nth-child(5) { animation-delay: 0.25s; }
+.menu-card:nth-child(6) { animation-delay: 0.3s; }
+
+/* Pulse ring for cart FAB */
+@keyframes pulseRing {
+  0% { box-shadow: 0 0 0 0 rgba(201,168,76,0.4); }
+  70% { box-shadow: 0 0 0 12px rgba(201,168,76,0); }
+  100% { box-shadow: 0 0 0 0 rgba(201,168,76,0); }
+}
+
+.cart-fab.pulse {
+  animation: pulseRing 1.5s ease-out;
+}
+
+/* Testimonial slide in */
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Shake for empty cart notification */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+/* Form success animation */
+@keyframes successBounce {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Hover glow for sections */
+.catering-card:hover .catering-icon,
+.platform-card:hover .platform-icon {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Decorative border shimmer */
+@keyframes borderGlow {
+  0%, 100% { border-color: rgba(201,168,76,0.2); }
+  50% { border-color: rgba(201,168,76,0.5); }
+}
+
+/* Add to cart success */
+.add-btn.added {
+  background: #4caf50 !important;
+  animation: successBounce 0.4s ease;
+}
+
