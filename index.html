@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Platter – Fine Dining & Catering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="crown-icon">♛</div>
+      <p class="preloader-text">ROYAL PLATTER</p>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="crown-nav">♛</span>
+      <span class="logo-text">ROYAL PLATTER</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#catering">Catering</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#order" class="btn-gold nav-order">Order Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobile()">Home</a></li>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#menu" onclick="closeMobile()">Menu</a></li>
+      <li><a href="#catering" onclick="closeMobile()">Catering</a></li>
+      <li><a href="#gallery" onclick="closeMobile()">Gallery</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+      <li><a href="#order" class="btn-gold" onclick="closeMobile()">Order Now</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-pattern"></div>
+    </div>
+    <div class="hero-content reveal">
+      <p class="hero-tagline">Est. Since Tradition</p>
+      <h1 class="hero-title">
+        <span class="title-line">Where Every</span>
+        <span class="title-line gold-text">Plate Tells</span>
+        <span class="title-line">A Royal Story</span>
+      </h1>
+      <p class="hero-subtitle">Authentic flavours crafted with passion, served with regal elegance</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn-gold">Explore Menu</a>
+        <a href="#order" class="btn-outline">Order Online</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Happy Customers</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">50+</span>
+        <span class="stat-label">Menu Items</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Years of Legacy</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE STRIP ========== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>♛ Biryani &nbsp;·&nbsp; ♛ Kebabs &nbsp;·&nbsp; ♛ Curries &nbsp;·&nbsp; ♛ Breads &nbsp;·&nbsp; ♛ Sweets &nbsp;·&nbsp; ♛ Catering &nbsp;·&nbsp; ♛ Biryani &nbsp;·&nbsp; ♛ Kebabs &nbsp;·&nbsp; ♛ Curries &nbsp;·&nbsp; ♛ Breads &nbsp;·&nbsp; ♛ Sweets &nbsp;·&nbsp; ♛ Catering &nbsp;·&nbsp;</span>
+      <span aria-hidden="true">♛ Biryani &nbsp;·&nbsp; ♛ Kebabs &nbsp;·&nbsp; ♛ Curries &nbsp;·&nbsp; ♛ Breads &nbsp;·&nbsp; ♛ Sweets &nbsp;·&nbsp; ♛ Catering &nbsp;·&nbsp; ♛ Biryani &nbsp;·&nbsp; ♛ Kebabs &nbsp;·&nbsp; ♛ Curries &nbsp;·&nbsp; ♛ Breads &nbsp;·&nbsp; ♛ Sweets &nbsp;·&nbsp; ♛ Catering &nbsp;·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-img-frame">
+            <div class="about-img-placeholder">
+              <span class="big-crown">♛</span>
+              <p>Royal Platter</p>
+            </div>
+            <div class="about-badge">
+              <span>Since</span>
+              <strong>2010</strong>
+            </div>
+          </div>
+          <div class="about-accent-block"></div>
+        </div>
+        <div class="about-text reveal-right">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 class="section-title">A Legacy of Flavour <br /><em>& Royalty</em></h2>
+          <p class="about-desc">Royal Platter was born from a simple belief — that great food is an act of love. We blend time-honoured family recipes with the finest locally-sourced ingredients to create an experience that goes far beyond a meal.</p>
+          <p class="about-desc">From our signature slow-cooked biryanis to our melt-in-your-mouth kebabs, every dish is crafted with intention, care, and a generous pinch of passion.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <span class="feature-icon">🌿</span>
+              <div>
+                <strong>Fresh Ingredients</strong>
+                <p>Sourced daily from local markets</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">👨‍🍳</span>
+              <div>
+                <strong>Master Chefs</strong>
+                <p>Trained in traditional royal cuisine</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🏆</span>
+              <div>
+                <strong>Award Winning</strong>
+                <p>Recognised for culinary excellence</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MENU ========== -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Offerings</p>
+        <h2 class="section-title">The Royal Menu</h2>
+        <div class="gold-divider"><span>♛</span></div>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="menu-tabs reveal">
+        <button class="tab-btn active" data-cat="all">All</button>
+        <button class="tab-btn" data-cat="starters">Starters</button>
+        <button class="tab-btn" data-cat="mains">Main Course</button>
+        <button class="tab-btn" data-cat="biryani">Biryani</button>
+        <button class="tab-btn" data-cat="breads">Breads</button>
+        <button class="tab-btn" data-cat="desserts">Desserts</button>
+        <button class="tab-btn" data-cat="drinks">Drinks</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Starters -->
+        <div class="menu-card reveal" data-cat="starters">
+          <div class="card-badge">Chef's Pick</div>
+          <div class="card-emoji">🥗</div>
+          <div class="card-info">
+            <h3>Paneer Tikka</h3>
+            <p>Succulent cottage cheese marinated in aromatic spices, grilled to perfection in a tandoor</p>
+            <div class="card-footer">
+              <span class="price">₹280</span>
+              <button class="add-btn" onclick="addToCart('Paneer Tikka', 280)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="starters">
+          <div class="card-emoji">🍗</div>
+          <div class="card-info">
+            <h3>Chicken Seekh Kebab</h3>
+            <p>Minced chicken blended with fresh herbs and spices, charcoal-grilled to smoky perfection</p>
+            <div class="card-footer">
+              <span class="price">₹320</span>
+              <button class="add-btn" onclick="addToCart('Chicken Seekh Kebab', 320)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="starters">
+          <div class="card-emoji">🥟</div>
+          <div class="card-info">
+            <h3>Samosa (2 pcs)</h3>
+            <p>Golden crispy pastry filled with spiced potatoes and peas, served with mint chutney</p>
+            <div class="card-footer">
+              <span class="price">₹120</span>
+              <button class="add-btn" onclick="addToCart('Samosa', 120)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="starters">
+          <div class="card-emoji">🍢</div>
+          <div class="card-info">
+            <h3>Malai Tikka</h3>
+            <p>Tender chicken marinated in cream and mild spices, grilled until delicately golden</p>
+            <div class="card-footer">
+              <span class="price">₹350</span>
+              <button class="add-btn" onclick="addToCart('Malai Tikka', 350)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mains -->
+        <div class="menu-card reveal" data-cat="mains">
+          <div class="card-badge veg-badge">Veg</div>
+          <div class="card-emoji">🍛</div>
+          <div class="card-info">
+            <h3>Butter Paneer Masala</h3>
+            <p>Soft paneer cubes simmered in a rich, velvety tomato-butter gravy with aromatic spices</p>
+            <div class="card-footer">
+              <span class="price">₹300</span>
+              <button class="add-btn" onclick="addToCart('Butter Paneer Masala', 300)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="mains">
+          <div class="card-badge">Bestseller</div>
+          <div class="card-emoji">🍖</div>
+          <div class="card-info">
+            <h3>Chicken Rogan Josh</h3>
+            <p>Traditional slow-cooked chicken in a bold Kashmiri sauce, fragrant with whole spices</p>
+            <div class="card-footer">
+              <span class="price">₹380</span>
+              <button class="add-btn" onclick="addToCart('Chicken Rogan Josh', 380)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="mains">
+          <div class="card-emoji">🥘</div>
+          <div class="card-info">
+            <h3>Dal Makhani</h3>
+            <p>Black lentils slow-cooked overnight with butter and cream — comfort on a plate</p>
+            <div class="card-footer">
+              <span class="price">₹220</span>
+              <button class="add-btn" onclick="addToCart('Dal Makhani', 220)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="mains">
+          <div class="card-emoji">🍗</div>
+          <div class="card-info">
+            <h3>Murgh Korma</h3>
+            <p>Royal chicken in a Mughlai-style nut-and-cream sauce with saffron</p>
+            <div class="card-footer">
+              <span class="price">₹400</span>
+              <button class="add-btn" onclick="addToCart('Murgh Korma', 400)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Biryani -->
+        <div class="menu-card reveal" data-cat="biryani">
+          <div class="card-badge">Signature</div>
+          <div class="card-emoji">🍚</div>
+          <div class="card-info">
+            <h3>Royal Chicken Biryani</h3>
+            <p>Dum-cooked basmati rice layered with marinated chicken, saffron and fried onions</p>
+            <div class="card-footer">
+              <span class="price">₹380</span>
+              <button class="add-btn" onclick="addToCart('Royal Chicken Biryani', 380)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="biryani">
+          <div class="card-emoji">🍚</div>
+          <div class="card-info">
+            <h3>Mutton Biryani</h3>
+            <p>Tender slow-cooked mutton with fragrant long-grain rice in traditional dum style</p>
+            <div class="card-footer">
+              <span class="price">₹450</span>
+              <button class="add-btn" onclick="addToCart('Mutton Biryani', 450)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="biryani">
+          <div class="card-badge veg-badge">Veg</div>
+          <div class="card-emoji">🌾</div>
+          <div class="card-info">
+            <h3>Veg Biryani</h3>
+            <p>Garden-fresh vegetables and paneer with saffron-infused basmati, dum-cooked</p>
+            <div class="card-footer">
+              <span class="price">₹280</span>
+              <button class="add-btn" onclick="addToCart('Veg Biryani', 280)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breads -->
+        <div class="menu-card reveal" data-cat="breads">
+          <div class="card-emoji">🫓</div>
+          <div class="card-info">
+            <h3>Butter Naan</h3>
+            <p>Fluffy leavened bread baked in a tandoor, finished with melted butter</p>
+            <div class="card-footer">
+              <span class="price">₹60</span>
+              <button class="add-btn" onclick="addToCart('Butter Naan', 60)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="breads">
+          <div class="card-emoji">🫓</div>
+          <div class="card-info">
+            <h3>Garlic Naan</h3>
+            <p>Tandoor-baked flatbread generously topped with garlic and fresh coriander</p>
+            <div class="card-footer">
+              <span class="price">₹80</span>
+              <button class="add-btn" onclick="addToCart('Garlic Naan', 80)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="breads">
+          <div class="card-emoji">🥙</div>
+          <div class="card-info">
+            <h3>Stuffed Paratha</h3>
+            <p>Whole-wheat flatbread stuffed with spiced aloo or paneer, served with pickle & yoghurt</p>
+            <div class="card-footer">
+              <span class="price">₹100</span>
+              <button class="add-btn" onclick="addToCart('Stuffed Paratha', 100)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-card reveal" data-cat="desserts">
+          <div class="card-emoji">🍮</div>
+          <div class="card-info">
+            <h3>Gulab Jamun</h3>
+            <p>Soft milk-solid dumplings soaked in rose-flavoured sugar syrup</p>
+            <div class="card-footer">
+              <span class="price">₹120</span>
+              <button class="add-btn" onclick="addToCart('Gulab Jamun', 120)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="desserts">
+          <div class="card-badge">Royal Exclusive</div>
+          <div class="card-emoji">🍨</div>
+          <div class="card-info">
+            <h3>Shahi Tukda</h3>
+            <p>Fried bread soaked in saffron-infused rabri with silver leaf garnish</p>
+            <div class="card-footer">
+              <span class="price">₹160</span>
+              <button class="add-btn" onclick="addToCart('Shahi Tukda', 160)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="desserts">
+          <div class="card-emoji">🍦</div>
+          <div class="card-info">
+            <h3>Kulfi</h3>
+            <p>Traditional Indian ice cream in pistachio and rose flavours, garnished with nuts</p>
+            <div class="card-footer">
+              <span class="price">₹130</span>
+              <button class="add-btn" onclick="addToCart('Kulfi', 130)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-card reveal" data-cat="drinks">
+          <div class="card-emoji">🥛</div>
+          <div class="card-info">
+            <h3>Mango Lassi</h3>
+            <p>Chilled blended yoghurt with fresh Alphonso mango pulp and a hint of cardamom</p>
+            <div class="card-footer">
+              <span class="price">₹100</span>
+              <button class="add-btn" onclick="addToCart('Mango Lassi', 100)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="drinks">
+          <div class="card-emoji">🌹</div>
+          <div class="card-info">
+            <h3>Rose Sharbat</h3>
+            <p>Chilled rose-infused drink with basil seeds and a splash of lemon — refreshingly regal</p>
+            <div class="card-footer">
+              <span class="price">₹80</span>
+              <button class="add-btn" onclick="addToCart('Rose Sharbat', 80)">+ Add</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-cat="drinks">
+          <div class="card-emoji">🫖</div>
+          <div class="card-info">
+            <h3>Masala Chai</h3>
+            <p>Aromatic spiced milk tea brewed with ginger, cardamom, cinnamon and cloves</p>
+            <div class="card-footer">
+              <span class="price">₹60</span>
+              <button class="add-btn" onclick="addToCart('Masala Chai', 60)">+ Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ONLINE ORDER SECTION ========== -->
+  <section id="order" class="order-section">
+    <div class="container">
+      <div class="order-content reveal">
+        <p class="section-eyebrow">Fast & Easy</p>
+        <h2 class="section-title">Order Online</h2>
+        <div class="gold-divider"><span>♛</span></div>
+        <p class="order-desc">Skip the wait — place your order online and enjoy Royal Platter's finest delivered to your doorstep, or ready for pickup.</p>
+        <div class="order-platforms">
+          <a href="tel:+919999999999" class="platform-card">
+            <span class="platform-icon">📞</span>
+            <strong>Call to Order</strong>
+            <span>+91 99999 99999</span>
+          </a>
+          <a href="https://wa.me/919999999999" target="_blank" class="platform-card">
+            <span class="platform-icon">💬</span>
+            <strong>WhatsApp</strong>
+            <span>Chat & Order</span>
+          </a>
+          <div class="platform-card">
+            <span class="platform-icon">🛵</span>
+            <strong>Delivery Apps</strong>
+            <span>Swiggy · Zomato</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CART SIDEBAR ========== -->
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>♛ Your Order</h3>
+      <button onclick="toggleCart()" class="cart-close">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Your royal platter is empty</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <a href="tel:+919999999999" class="btn-gold full-width">Place Order via Call</a>
+      <a href="https://wa.me/919999999999" target="_blank" class="btn-outline full-width" style="margin-top:10px">Order via WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Cart Button -->
+  <
